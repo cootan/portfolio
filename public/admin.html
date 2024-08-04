@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Abhay Kumar's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">Admin Panel</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold mb-4">Manage Projects</h2>
+            <form id="update-project-form">
+                <div class="mb-4">
+                    <label for="project-name" class="block text-lg font-medium">Project Name</label>
+                    <input type="text" id="project-name" name="project-name" class="mt-1 block w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="project-description" class="block text-lg font-medium">Project Description</label>
+                    <textarea id="project-description" name="project-description" rows="4" class="mt-1 block w-full p-2 border rounded" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="github-link" class="block text-lg font-medium">GitHub Link</label>
+                    <input type="url" id="github-link" name="github-link" class="mt-1 block w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="live-demo-link" class="block text-lg font-medium">Live Demo Link</label>
+                    <input type="url" id="live-demo-link" name="live-demo-link" class="mt-1 block w-full p-2 border rounded" required>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Update Project</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <a href="/" class="text-white hover:underline">Back to Portfolio</a>
+        </div>
+    </footer>
+
+    <script src="/admin/script.js"></script>
+</body>
+</html>
